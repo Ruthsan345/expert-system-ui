@@ -42,7 +42,7 @@ export default () => {
       </div>
 
       <Row className="justify-content-md-center">
-        <Col xs={12} className="mb-4 d-none d-sm-block">
+        {/* <Col xs={12} className="mb-4 d-none d-sm-block">
           <SalesValueWidget
             title="Sales Value"
             value="10,567"
@@ -76,9 +76,9 @@ export default () => {
             icon={faCashRegister}
             iconColor="shape-tertiary"
           />
-        </Col>
+        </Col> */}
 
-        <Col xs={12} sm={6} xl={4} className="mb-4">
+        <Col  sm={6}  className="mb-4">
           <CircleChartWidget
             title="Traffic Share"
             data={trafficShares} />
@@ -86,7 +86,7 @@ export default () => {
       </Row>
 
       <Row>
-        <Col xs={12} xl={12} className="mb-4">
+        {/* <Col xs={12} xl={12} className="mb-4">
           <Row>
             <Col xs={12} xl={8} className="mb-4">
               <Row>
@@ -124,7 +124,7 @@ export default () => {
               </Row>
             </Col>
           </Row>
-        </Col>
+        </Col> */}
       </Row>
     </>
   );
