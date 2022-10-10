@@ -7,6 +7,7 @@ import Presentation from "./Presentation";
 import Upgrade from "./Upgrade";
 import DashboardOverview from "./dashboard/DashboardOverview";
 import Transactions from "./Transactions";
+import Symptoms from "./Symptoms";
 import Settings from "./Settings";
 import BootstrapTables from "./tables/BootstrapTables";
 import Signin from "./examples/Signin";
@@ -90,7 +91,7 @@ const RouteWithSidebar = ({ component: Component, ...rest }) => {
         <main className="content">
           <Navbar />
           <Component {...props} />
-          <Footer toggleSettings={toggleSettings} showSettings={showSettings} />
+          {/* <Footer toggleSettings={toggleSettings} showSettings={showSettings} /> */}
         </main>
       </>
     )}
@@ -111,6 +112,8 @@ export default () => (
 
     {/* pages */}
     <RouteWithSidebar exact path={Routes.Transactions.path} component={DashboardOverview} />
+    <RouteWithSidebar exact path={Routes.Symptoms.path} component={Symptoms} />
+
     <RouteWithSidebar exact path={Routes.Upgrade.path} component={Upgrade} />
     <RouteWithSidebar exact path={Routes.DashboardOverview.path} component={Transactions} />
     <RouteWithSidebar exact path={Routes.Settings.path} component={Settings} />

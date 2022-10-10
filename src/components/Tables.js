@@ -1,6 +1,7 @@
 
 import React,{useState, useEffect} from "react";
 import axios from 'axios';
+import {baseURL} from "../routes";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp, faArrowDown, faArrowUp, faEdit, faEllipsisH, faExternalLinkAlt, faEye, faTrashAlt, faCheck, faCog, faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -197,7 +198,7 @@ export const TransactionsTable = (props) => {
   const [search, setSearch] = useState("");
 
   const submitSearch  = () =>{
-    axios.get("http://localhost:8080/api/expert-system/rule-nameSpace",{
+    axios.get(`${baseURL}/api/expert-system/rule-nameSpace`,{
       params: {
         ruleNameSpace: search,
         page: "0",
@@ -214,7 +215,7 @@ export const TransactionsTable = (props) => {
 
   
   useEffect(() => {
-    axios.get("http://localhost:8080/api/expert-system/all",{
+    axios.get(`${baseURL}/api/expert-system/all`,{
       params: {
         page: pages,
         size: "5"

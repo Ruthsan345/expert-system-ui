@@ -101,6 +101,8 @@ export default (props = {}) => {
               <NavItem title=" Overview" link={Routes.DashboardOverview.path} icon={faChartPie} />
 
               <NavItem title="Analytics" icon={faHandHoldingUsd} link={Routes.Transactions.path} />
+              <NavItem title="Symptoms" icon={faCog} link={Routes.Symptoms.path} />
+
 
 
               {/* <NavItem external title="Messages" link="https://demo.themesberg.com/volt-pro-react/#/messages" target="_blank" badgeText="Pro" icon={faInbox} /> */}

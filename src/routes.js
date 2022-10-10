@@ -1,9 +1,12 @@
-
+export const baseURL= "https://9a9a-103-224-32-229.in.ngrok.io"
+export const pythonURL="https://b2ac-2401-4900-4a9f-b96-78ea-8cad-1deb-e9ce.in.ngrok.io"
 export const Routes = {
     // pages
     Presentation: { path: "/" },
     DashboardOverview: { path: "/" },
     Transactions: { path: "/transactions" },
+    Symptoms: { path: "/symptoms" },
+
     Settings: { path: "/settings" },
     Upgrade: { path: "/upgrade" },
     BootstrapTables: { path: "/tables/bootstrap-tables" },
