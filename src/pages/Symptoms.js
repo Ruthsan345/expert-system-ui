@@ -38,7 +38,7 @@ const addFields = () => {
 const submit = (e) => {
   e.preventDefault();
   const data={
-    "action": "lung_failure",
+    "action": "liver_failure",
     "condition": "YES",
     "symptomsRequestList" : inputFields
   }
@@ -137,7 +137,7 @@ const submit = (e) => {
   <Form.Group className="mb-3">
   <Form.Label>Action</Form.Label>
     <Form.Select required >
-      <option defaultValue>Lung failure</option>
+      <option defaultValue>liver failure</option>
     </Form.Select>
     </Form.Group>
 
@@ -164,7 +164,7 @@ const submit = (e) => {
             <option defaultValue >select</option>
 
               <option value="HIGH">High</option>
-              <option value="MEDIUM">MEDIUM</option>
+              <option value="MEDIUM">Medium</option>
               <option value="LOW">Low</option>
             </Form.Select>  
             </Form.Group>

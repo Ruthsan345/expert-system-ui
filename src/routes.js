@@ -1,5 +1,5 @@
-export const baseURL= "https://9a9a-103-224-32-229.in.ngrok.io"
-export const pythonURL="https://b2ac-2401-4900-4a9f-b96-78ea-8cad-1deb-e9ce.in.ngrok.io"
+export const baseURL= "http://expert-system.ap-south-1.elasticbeanstalk.com"
+export const pythonURL="http://ec2-35-154-230-161.ap-south-1.compute.amazonaws.com:5000"
 export const Routes = {
     // pages
     Presentation: { path: "/" },

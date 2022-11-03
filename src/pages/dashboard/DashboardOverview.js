@@ -64,7 +64,7 @@ export default () => {
     },
     colors: ["#008FFB"],
     title: {
-      text: 'HeatMap Chart (Single color)'
+      text: 'Heat Map Chart'
     },
   }
 
@@ -72,7 +72,7 @@ export default () => {
 
     let res = selected.map(({label, value}) => (value));
     const data = {
-      "action": "lung_failure",
+      "action": "liver_failure",
       "condition": "YES",
       "symptoms":res
     }
@@ -217,6 +217,8 @@ export default () => {
             value={conditionValue.symptoms_ratio}
             segments={10}
             currentValueText="Symptoms ratio"
+            startColor="green"
+            endColor="red"
 
           />
         </Col>
@@ -227,6 +229,9 @@ export default () => {
             value={conditionValue.chances_ratio}
             segments={10}
             currentValueText="Chances ratio"
+            startColor="green"
+            endColor="red"
+            
 
           />
 
