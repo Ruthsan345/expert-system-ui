@@ -1,5 +1,5 @@
 export const baseURL= "http://expert-system.ap-south-1.elasticbeanstalk.com"
-export const pythonURL="http://ec2-35-154-230-161.ap-south-1.compute.amazonaws.com:5000"
+export const pythonURL="http://65.0.237.228:5000"
 export const Routes = {
     // pages
     Presentation: { path: "/" },
